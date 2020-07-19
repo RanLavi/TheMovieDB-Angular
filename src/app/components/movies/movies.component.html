@@ -2,8 +2,8 @@
     <span class="movie-overview">{{movie?.overview}}</span>
     <div class="movie-header">Released: {{movie?.release_date}}</div>
     <div class="stars">
-      <div *ngFor="let number of [1,2,3,4,5]">
-        <span [ngClass]="movie?.vote_average/2 >= number ? 'full-star' : 'blank-star'"></span>
+      <div *ngFor="let number of [0,1,2,3,4]">
+        <span [ngClass]="movie?.vote_average >= number*2 ? 'full-star' : 'blank-star'"></span>
       </div>
     </div>
     <img src="https://image.tmdb.org/t/p/w185_and_h278_bestv2/{{movie?.poster_path}}" alt="">

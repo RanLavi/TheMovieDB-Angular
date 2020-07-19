@@ -9,7 +9,7 @@ import { Movie, getAll } from '../store/actions/movies.actions';
 })
 
 export class AppComponent implements OnInit {
-  title = 'movies';
+  title = 'Top 60 Trending Movies From The Last Week';
   constructor(private store: Store<{ movieList: Movie[]; }>) {
   }
 
