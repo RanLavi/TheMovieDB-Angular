@@ -4,7 +4,6 @@ import { StoreModule } from '@ngrx/store';
 import { moviesReducer } from './store/reducer/movies.reducer';
 import { HttpClientModule } from '@angular/common/http'
 import { AppComponent } from './components/app.component';
-
 import { EffectsModule } from '@ngrx/effects';
 import { MoviesEffects } from './store/effects/movies.effects';
 import { MoviesComponent } from './components/movies/movies.component';

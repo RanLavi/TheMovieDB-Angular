@@ -1,8 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { getAllSuccess, Movie } from '../store/actions/movies.actions';
 import { Observable, concat } from 'rxjs';
-
 @Injectable({
     providedIn: 'root'
   })
